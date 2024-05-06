@@ -13,7 +13,7 @@ conn = sqlite3.connect('pincode.db')
 # Read CSV file
 @st.cache
 def load_data():
-    df = pd.read_csv('/Users/raafid_mv/Downloads/Pincode_30052019.csv', encoding='ISO-8859-1')
+    df = pd.read_csv('Pincode_30052019.csv', encoding='ISO-8859-1')
     df.columns = ['CircleName', 'RegionName', 'DivisionName', 'OfficeName', 'Pincode',
                   'OfficeType', 'Delivery', 'District', 'StateName']
     return df
